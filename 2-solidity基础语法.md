@@ -733,4 +733,71 @@ abi.encodeCall 是 Solidity 0.8.11 引入的新特性，用于更加简便地编
 6. abi.decode
 在 Solidity 中，abi.decode 用于解码由 abi.encode、abi.encodePacked、abi.encodeWithSelector 和 abi.encodeWithSignature 编码的数据。虽然 abi.decode 的核心功能是将编码的字节数据解码为原始类型，但它没有不同种类的变体。其使用方式主要取决于输入的编码数据以及预期解码的数据类型。
 
-add github 
+---
+
+# 链接并部署到ethereum 网络
+
+```
+PS E:\web3\github\web3\以太坊基础\todolist> npm init -y 
+Wrote to E:\web3\github\web3\以太坊基础\todolist\package.json:
+
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+PS E:\web3\github\web3\以太坊基础\todolist> npm -i -D hardhat
+Unknown command: "hardhat"
+
+To see a list of supported npm commands, run:
+  npm help
+PS E:\web3\github\web3\以太坊基础\todolist> npm i -D hardhat 
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.  
+npm warn deprecated glob@7.2.0: Glob versions prior to v9 are no longer supported
+npm warn deprecated glob@8.1.0: Glob versions prior to v9 are no longer supported
+
+added 267 packages, and audited 268 packages in 20s
+
+52 packages are looking for funding
+  run `npm fund` for details
+
+8 low severity vulnerabilities
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+PS E:\web3\github\web3\以太坊基础\todolist> npm hardhat init
+Unknown command: "hardhat"
+
+To see a list of supported npm commands, run:
+  npm help
+PS E:\web3\github\web3\以太坊基础\todolist> npx hardhat init
+888    888                      888 888               888
+888    888                      888 888               888
+888    888                      888 888               888
+8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
+888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
+888    888 .d888888 888    888  888 888  888 .d888888 888
+888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
+888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
+
+Welcome to Hardhat v2.22.9
+
+√ What do you want to do? · Create a JavaScript project
+√ Hardhat project root: · E:\web3\github\web3\以太坊基础\todolist
+√ Do you want to add a .gitignore? (Y/n) · y
+√ Do you want to install this sample project's dependencies with npm (@nomicfoundation/hardhat-toolbox)? (Y/n) · y  
+```
+
+
